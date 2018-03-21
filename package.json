@@ -4,7 +4,10 @@
   "description": "To do app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bundle": "browserify ./src/js/app.js -o ./public/bundle.js",
+    "stylus": "stylus ./src/css/main.styl -o ./public/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run bundle && npm run stylus"
   },
   "keywords": [
     "js",
@@ -12,5 +15,8 @@
     "laboratoria"
   ],
   "author": "Ivan Medina",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^16.1.1"
+  }
 }

@@ -1,14 +1,8 @@
-/* <div class="col s12 m6 todo">
-<div class="card-panel">
-    <input type="checkbox" id="tarea-1" />
-    <label for="tarea-1">
-        Tarea 1.                        
-    </label>
-</div>
-</div> */
+const deadline = require('./deadline');
 
 const app = {
     init() {
+        console.log('Hola bundle!!');
         $('#todo-form').submit(app.addTodo);
     },
     addTodo(event) {
@@ -35,7 +29,7 @@ const app = {
 
 $(document).ready(app.init);
 
-
+deadline.addDeadline();
 
 
 
