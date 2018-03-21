@@ -1,6 +1,0 @@
-input[type=checkbox]:checked + label {
-  text-decoration: line-through;
-}
-body {
-  background-color: #45ac32;
-}
